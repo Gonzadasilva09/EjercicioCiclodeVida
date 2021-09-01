@@ -32,7 +32,8 @@ namespace ConsoleApplication
 
             Console.WriteLine(t1==t2);
             Console.WriteLine(t2==t3);
-              
+            Console.WriteLine(t1.getname());
+
         }
     }
 }

@@ -14,9 +14,15 @@ namespace ClassLibrary
     public class Train
     {
         private static int count = 0;
-        private static String name;
+        private string name;
 
-        public String Name{get; set;}
+        //public string Name{get; set;}
+        public string getname(){
+           
+            return this.name;
+        }
+            
+    
         public static int Count{
             get{
                 return Train.count;
@@ -25,8 +31,8 @@ namespace ClassLibrary
 
 
 
-        public Train(String Name){
-            this.Name=name;
+        public Train(string Name){
+            this.name=Name;
             Train.count+=1;
         }
         ~Train(){
